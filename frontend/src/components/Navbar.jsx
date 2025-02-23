@@ -7,13 +7,13 @@ const Navbar = ({openLogin}) => {
       <div className="container mx-auto justify-around flex items-center">
 
         {/* Logo */}
-        <h1 className="text-2xl font-bold text-red-500">BiteSwift</h1>
+        <h1 className="text-3xl font-bold text-red-500 font-amatic">BiteSwift</h1>
 
         { /* Navlinks */}
         <ul className="flex space-x-10 ">
-          <li><Link to="/" className="hover:text-red-500 text-[#2A2A2A]">Home</Link></li>
-          <li><Link to="/restaurants" className="hover:text-red-500 text-[#2A2A2A]">Restaurants</Link></li>
-          <li><Link to="/cart" className="hover:text-red-500 text-[#2A2A2A]">Cart</Link></li>
+          <li><Link to="/" className="hover:text-red-500">Home</Link></li>
+          <li><Link to="/restaurants" className="hover:text-red-500">Restaurants</Link></li>
+          <li><Link to="/cart" className="hover:text-red-500">Cart</Link></li>
         </ul>
 
         { /* Login Button */}

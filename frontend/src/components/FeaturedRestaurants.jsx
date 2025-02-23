@@ -62,7 +62,7 @@ const FeaturedRestaurants = () => {
                 <MdLocationOn className='mr-1'/>
                 {res.location}
               </div>
-              <button className="text-sm text-red-500 cursor-pointer hover:underline bg-white p-2 font-bold rounded-sm mt-5">
+              <button className="text-sm text-red-500 cursor-pointer bg-white p-2 font-bold rounded-sm mt-5 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl">
                 Know More →
               </button>
               </div>
@@ -72,7 +72,7 @@ const FeaturedRestaurants = () => {
 
         {/* See More Button */}
         <div className="flex justify-center items-center pl-50 w-1/3">
-          <button className="flex items-center text-red-500 text-lg font-semibold hover:underline">
+          <button className="flex items-center text-red-500 text-lg font-semibold transform transition-all duration-300 hover:scale-105">
             see more <IoArrowForwardOutline className="ml-2" />
           </button>
         </div>
