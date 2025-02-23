@@ -26,10 +26,10 @@ const reviews = [
 
 const CustomerReviews = () => {
   return (
-    <div className="bg-gray-100 py-16 px-6">
+    <div className="bg-[#fff5ec] py-16 px-6">
       <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-3xl font-bold text-gray-800">What Our Customers Say ❤️</h2>
-        <p className="text-gray-500 mt-2">Real experiences from our happy customers</p>
+        <h2 className="text-3xl font-bold text-[#2A2A2A]">What Our Customers Say ❤️</h2>
+        <p className="text-gray-600 mt-2">Real experiences from our happy customers</p>
 
         {/* Review Cards */}
         <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
@@ -37,10 +37,10 @@ const CustomerReviews = () => {
             <div key={review.id} className="bg-white p-6 rounded-lg shadow-lg text-center transform hover:scale-105 transition duration-300">
               
               {/* Customer Image */}
-              <img src={review.image} alt={review.name} className="w-16 h-16 mx-auto rounded-full border-2 border-red-500"/>
+              <img src={review.image} alt={review.name} className="w-18 h-18 mx-auto rounded-full border-2 border-red-500"/>
 
               {/* Name & Review */}
-              <h3 className="mt-4 text-lg font-semibold text-gray-800">{review.name}</h3>
+              <h3 className="mt-4 text-lg font-semibold text-[#2A2A2A]]">{review.name}</h3>
               <p className="text-gray-600 text-sm mt-2">"{review.review}"</p>
 
               {/* Rating */}

@@ -2,6 +2,7 @@ const CTA = () => {
   return (
     <div className="bg-gradient-to-r from-red-500 to-red-600 text-white text-center py-16 px-6">
       
+      {/* Header */}
       <h2 className="text-4xl font-extrabold">Want to list your restaurant?</h2>
       <p className="text-lg mt-3 opacity-90">
         Join us today and grow your business with BiteSwift! 🚀

@@ -21,14 +21,14 @@ const SignupModal = ({ closeSignup, openLogin }) => {
 
       {/* Modal Box */}
       <div className="relative bg-white p-6 rounded-lg shadow-lg w-96">
-        <h2 className="text-2xl font-semibold mb-4">Signup</h2>
+        <h2 className="text-2xl font-bold mb-4 text-[#2A2A2A]">Signup</h2>
 
         {/* Full Name Input */}
         <input
           ref={inputRef}
           type="text"
           placeholder="Full Name"
-          className="w-full p-2 border rounded mb-3 focus:outline-green-500"
+          className="w-full p-2 border rounded mb-3 focus:outline-red-500"
           required
         />
 
@@ -36,7 +36,7 @@ const SignupModal = ({ closeSignup, openLogin }) => {
         <input
           type="email"
           placeholder="Email"
-          className="w-full p-2 border rounded mb-3 focus:outline-green-500"
+          className="w-full p-2 border rounded mb-3 focus:outline-red-500"
           required
         />
 
@@ -57,7 +57,7 @@ const SignupModal = ({ closeSignup, openLogin }) => {
         </div>
 
         {/* Create Account Button */}
-        <button className={`w-full py-2 text-white ${isChecked ? 'bg-red-500' : 'bg-gray-300 cursor-not-allowed' }`}>
+        <button className={`w-full py-2 text-white rounded ${isChecked ? 'bg-red-500' : 'bg-gray-300 cursor-not-allowed' }`}>
           Create Account
         </button>
 

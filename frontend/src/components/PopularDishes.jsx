@@ -12,11 +12,11 @@ const PopularDishes = () => {
   ];
 
   return (
-    <section className="container mx-auto h-[100vh] bg-[#fff5ec]">
+    <section className="container mx-auto py-20 bg-[#fff5ec] text-[#2A2A2A]">
 
       { /* Header */}
-      <h2 className="text-4xl font-bold text-center text-gray-800">🔥 Popular Dishes</h2>
-      <p className="text-center text-gray-500 mt-2">Enjoy the best dishes loved by everyone</p>
+      <h2 className="text-4xl font-bold text-center">🔥 Popular Dishes</h2>
+      <p className="text-center text-gray-600 mt-2">Enjoy the best dishes loved by everyone</p>
 
       {/* Card */}
       <div className="flex justify-center mt-20 gap-8 flex-wrap">
@@ -28,7 +28,7 @@ const PopularDishes = () => {
             <img src={dish.img} alt={dish.name} className="h-[65%] w-full object-cover" />
             <div className="p-4 text-center">
               <div className='flex justify-between'>
-                <span className="text-lg font-semibold text-gray-800">{dish.name}</span>
+                <span className="text-lg">{dish.name}</span>
                 <span className="text-lg font-semibold text-red-500">{dish.price}</span>
               </div>
               <p className="text-lg text-red-500 font-bold"></p>

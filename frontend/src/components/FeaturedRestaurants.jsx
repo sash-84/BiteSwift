@@ -1,6 +1,7 @@
 import pizza from '../assets/pizza.jpeg';
 import burger from '../assets/burger.jpeg';
 import sushi from '../assets/sushi.jpeg';
+import { Link } from 'react-router-dom';
 
 import { MdLocationOn } from "react-icons/md";
 import { IoArrowForwardOutline } from "react-icons/io5";
@@ -23,22 +24,22 @@ const FeaturedRestaurants = () => {
       location: "Shahunagar", 
       subline: "Authentic sushi with fresh ingredients." 
     },
-    { 
-      id: 3, 
-      name: "Burger Hanger", 
-      img: burger, 
-      rating: "4.8", 
-      location: "Sharadnagar", 
-      subline: "Juicy burgers with secret sauce." 
-    },
+    // { 
+    //   id: 3, 
+    //   name: "Burger Hanger", 
+    //   img: burger, 
+    //   rating: "4.8", 
+    //   location: "Sharadnagar", 
+    //   subline: "Juicy burgers with secret sauce." 
+    // },
   ];
 
   return (
-    <section className="container mx-auto pt-10 bg-[#fff5ec] h-[100vh]">
+    <section className="container mx-auto py-20 bg-[#fff5ec]">
 
       {/* Header */}
       <div className="max-w-5xl mx-auto flex justify-between items-start">
-        <h2 className="text-2xl font-bold border-l-8 border-red-500 px-4">
+        <h2 className="text-2xl font-bold border-l-8 border-red-500 px-4 text-[#2A2A2A]">
           some top restaurants <br /> near you 🍽️
         </h2>
         <p className="text-gray-600 max-w-md">
@@ -72,8 +73,10 @@ const FeaturedRestaurants = () => {
 
         {/* See More Button */}
         <div className="flex justify-center items-center pl-50 w-1/3">
-          <button className="flex items-center text-red-500 text-lg font-semibold transform transition-all duration-300 hover:scale-105">
-            see more <IoArrowForwardOutline className="ml-2" />
+          <button className="flex items-center text-red-500 text-lg font-semibold transform transition-all duration-300 hover:scale-105 justify-center">
+          <Link to="/restaurants">
+          see more <IoArrowForwardOutline className="ml-2" />
+          </Link>
           </button>
         </div>
       </div>

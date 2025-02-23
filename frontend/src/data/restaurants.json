@@ -1,0 +1,452 @@
+[
+    {
+        "id": 1,
+        "name": "Ukiyo",
+        "img": "ukiyo.jpg",
+        "rating": "4.1",
+        "location": "Location 1",
+        "cuisine": "Japanese",
+        "description": "Japanese cuisine with a modern twist, offering dishes like sushi, rame, tempura, and soba in a sophisticated ambiance!"
+    },
+    {
+        "id": 2,
+        "name": "Copper Chimney",
+        "img": "copper.jpg",
+        "rating": "4.2",
+        "location": "Location 2",
+        "cuisine": "Indian",
+        "description": "Renowned for its North Indian and Mughlai dishes, inluding biryanis and succulent kebabs!"
+    },
+    {
+        "id": 3,
+        "name": "The Burger House",
+        "img": "burgerhouse.jpg",
+        "rating": "4.3",
+        "location": "Location 3",
+        "cuisine": "Fast Food",
+        "description": "A go-to place for gourmet burgers with a variety of fillings, served in a fast-food style!"
+    },
+    {
+        "id": 4,
+        "name": "TGI Fridays",
+        "img": "tgi.jpg",
+        "rating": "4.4",
+        "location": "Location 4",
+        "cuisine": "Mexican",
+        "description": "Offering a variety of Mexican dishes, including fajitas and quesadillas, in a casual dining atmosphere."
+    },
+    {
+        "id": 5,
+        "name": "Baan Tao",
+        "img": "baan.jpg",
+        "rating": "4.0",
+        "location": "Location 5",
+        "cuisine": "Chinese",
+        "description": "Offers a serene ambiance with a menu featuring Chinese and other Asian delicacies!"
+    },
+    {
+        "id": 6,
+        "name": "Barbeque Nation",
+        "img": "nation.jpg",
+        "rating": "4.1",
+        "location": "Location 6",
+        "cuisine": "Barbecue",
+        "description": "Renowned for its live grill concept, offering a wide range of vegetarian and non-vegetarian barbecued dishes in a vibrant atmosphere!"
+    },
+    {
+        "id": 7,
+        "name": "Lifestyle",
+        "img": "lifestyle.jpg",
+        "rating": "4.2",
+        "location": "Location 7",
+        "cuisine": "Cafe",
+        "description": "Known for its healthy and organic menu options, including smoothies, salads, and specialty coffees, all served in a serene environment!"
+    },
+    {
+        "id": 8,
+        "name": "Fish Curry Rice",
+        "img": "curry.jpg",
+        "rating": "4.3",
+        "location": "Location 8",
+        "cuisine": "Seafood",
+        "description": "Known for its homestyle Maharashtrian seafood, offers a variety of traditional dishes in a simple and cozy setting!"
+    },
+    {
+        "id": 9,
+        "name": "the French Window Patisserie",
+        "img": "french.jpg",
+        "rating": "4.4",
+        "location": "Location 9",
+        "cuisine": "Desserts",
+        "description": "Known for its charming ambiance and open-air seating. Offers a delightful array of breakfast dishes and a variety of cakes, including frosted, mousse, and seasonal specialties!"
+    },
+    {
+        "id": 10,
+        "name": "Little Italy",
+        "img": "italy.jpg",
+        "rating": "4.0",
+        "location": "Location 0",
+        "cuisine": "Italian",
+        "description": "Renowned for its extensive vegetarian Italian menu, including a wide selection of pizzas, pastas, and desserts!"
+    },
+    {
+        "id": 11,
+        "name": "Koji",
+        "img": "koji.jpg",
+        "rating": "4.1",
+        "location": "Location 1",
+        "cuisine": "Japanese",
+        "description": "Premier Pan-Asian restaurant serving authentic Japanese, Chinese, and Thai dishes!"
+    },
+    {
+        "id": 12,
+        "name": "The Great Kabab Factory",
+        "img": "great.jpg",
+        "rating": "4.2",
+        "location": "Location 2",
+        "cuisine": "Indian",
+        "description": "Specializes in a variety of delectable kebabs, offering a unique dining experience for meat lovers.!"
+    },
+    {
+        "id": 13,
+        "name": "Epitome",
+        "img": "burger.jpeg",
+        "rating": "4.3",
+        "location": "Location 3",
+        "cuisine": "Fast Food",
+        "description": "Offers a variety of fast-food options, including sandwiches and quick meals!"
+    },
+    {
+        "id": 14,
+        "name": "Laa Unico",
+        "img": "laa.jpg",
+        "rating": "4.4",
+        "location": "Location 4",
+        "cuisine": "Mexican",
+        "description": "Serving a fusion of Mexican and Italian cuisines, known for its innovative dishes and vibrant ambiance!"
+    },
+    {
+        "id": 15,
+        "name": "Mainland China",
+        "img": "mainland.jpg",
+        "rating": "4.0",
+        "location": "Location 5",
+        "cuisine": "Chinese",
+        "description": "Known for its extensive Chinese menu and contemporary decor!"
+    },
+    {
+        "id": 16,
+        "name": "Absolute Barbecues",
+        "img": "absolute.jpg",
+        "rating": "4.1",
+        "location": "Location 6",
+        "cuisine": "Barbecue",
+        "description": "Features a unique 'do-it-yourself' grilling experience with an extensive buffet of meats, seafood, and vegetables.!"
+    },
+    {
+        "id": 17,
+        "name": "The Flour Works",
+        "img": "flour.jpg",
+        "rating": "4.2",
+        "location": "Location 7",
+        "cuisine": "Cafe",
+        "description": "Offers a cozy ambiance with a menu featuring European and Continental dishes, along with freshly baked goods and artisanal coffee!"
+    },
+    {
+        "id": 18,
+        "name": "Gajalee",
+        "img": "gajalee.jpg",
+        "rating": "4.3",
+        "location": "Location 8",
+        "cuisine": "Seafood",
+        "description": "Offers a range of Malvani and Maharashtrian seafood specialties in a comfortable setting!"
+    },
+    {
+        "id": 19,
+        "name": "Le Plaisir",
+        "img": "le.jpg",
+        "rating": "4.4",
+        "location": "Location 9",
+        "cuisine": "Desserts",
+        "description": "Offering a range of delectable desserts like pastries, tarts, and cakes. The monochrome interior and blackboard menus add to its sophisticated charm!"
+    },
+    {
+        "id": 20,
+        "name": "Squisito",
+        "img": "squisto.jpg",
+        "rating": "4.0",
+        "location": "Location 0",
+        "cuisine": "Italian",
+        "description": "Offers a cozy setting with a menu featuring a variety of pizzas, pastas, and other Italian favorites, making it a popular spot for authentic Italian dining!"
+    },
+    {
+        "id": 21,
+        "name": "Gong",
+        "img": "gong.jpg",
+        "rating": "4.1",
+        "location": "Location 1",
+        "cuisine": "Japanese",
+        "description": "Modern take on traditional Japanese cuisine including dishes like Ebi tempura rolls and vegetable rystal rolls!"
+    },
+    {
+        "id": 22,
+        "name": "Wah Marathi",
+        "img": "wah.jpg",
+        "rating": "4.2",
+        "location": "Location 2",
+        "cuisine": "Indian",
+        "description": "Serves authentic Maharashtrian cuisine, allowing guests to savor traditional regional flavors in a contemporary setting!"
+    },
+    {
+        "id": 23,
+        "name": "Toit",
+        "img": "toit.jpg",
+        "rating": "4.3",
+        "location": "Location 3",
+        "cuisine": "Fast Food",
+        "description": "A microbrewery and pub offering a variety of fast-food options alongside their craft beers!"
+    },
+    {
+        "id": 24,
+        "name": "The Bridge",
+        "img": "burger.jpeg",
+        "rating": "4.4",
+        "location": "Location 4",
+        "cuisine": "Mexican",
+        "description": "An upscale dining venue offering a selection of Mexican dishes in a sophisticated environment!"
+    },
+    {
+        "id": 25,
+        "name": "Kimling",
+        "img": "kimling.jpg",
+        "rating": "4.0",
+        "location": "Location 5",
+        "cuisine": "Chinese",
+        "description": "Authentic Chinese flavors and cozy dining environment!"
+    },
+    {
+        "id": 26,
+        "name": "Fire & Smoke",
+        "img": "burger.jpeg",
+        "rating": "4.1",
+        "location": "Location 6",
+        "cuisine": "Barbecue",
+        "description": "specializes in barbecue cuisine, offering a cozy ambiance and a variety of grilled delicacies!"
+    },
+    {
+        "id": 27,
+        "name": "Cafe Goodluck",
+        "img": "goodluck.jpg",
+        "rating": "4.2",
+        "location": "Location 7",
+        "cuisine": "Cafe",
+        "description": "One of Pune's oldest Irani cafés, famous for its bun maska and Iranian tea!"
+    },
+    {
+        "id": 28,
+        "name": "Cafe Goa",
+        "img": "goa.jpg",
+        "rating": "4.3",
+        "location": "Location 8",
+        "cuisine": "Seafood",
+        "description": "Serves authentic Goan seafood, providing a taste of Goa in Pune!"
+    },
+    {
+        "id": 29,
+        "name": "Pune Baking Company",
+        "img": "pune.jpg",
+        "rating": "4.4",
+        "location": "Location 9",
+        "cuisine": "Desserts",
+        "description": "Offers a selection of freshly baked goods, desserts, and beverages. Known for its quality and variety, it's a favorite spot for dessert enthusiast!"
+    },
+    {
+        "id": 30,
+        "name": "Sorriso",
+        "img": "sorriso.jpg",
+        "rating": "4.0",
+        "location": "Location 0",
+        "cuisine": "Italian",
+        "description": "Known for its traditional Italian cuisine, including risottos, ravioli, and wood-fired pizzas, all served in a sophisticated atmosphere!"
+    },
+    {
+        "id": 31,
+        "name": "Harajuku",
+        "img": "harajaku.jpg",
+        "rating": "4.1",
+        "location": "Location 1",
+        "cuisine": "Japanese",
+        "description": "Brings Tokyo's street-food staples to Pune, offering live teppanyaki counters and a range of sushi and sashimi!"
+    },
+    {
+        "id": 32,
+        "name": "Mosaic",
+        "img": "mosaic.jpg",
+        "rating": "4.2",
+        "location": "Location 2",
+        "cuisine": "Indian",
+        "description": "Offers a diverse buffet with Indian and international cuisines, perfect for family gatherings!"
+    },
+    {
+        "id": 33,
+        "name": "Burgs",
+        "img": "burgs.jpg",
+        "rating": "4.3",
+        "location": "Location 3",
+        "cuisine": "Fast Food",
+        "description": "A fast-food chain serving a variety of gourmet burgers, including vegetarian options!"
+    },
+    {
+        "id": 34,
+        "name": "Polka Dots",
+        "img": "burger.jpeg",
+        "rating": "4.4",
+        "location": "Location 4",
+        "cuisine": "Mexican",
+        "description": "Known for its diverse menu, including Mexican favorites like enchiladas and burritos, served in a cozy setting!"
+    },
+    {
+        "id": 35,
+        "name": "Wishpering Bamboo",
+        "img": "bamboo.jpg",
+        "rating": "4.0",
+        "location": "Location 5",
+        "cuisine": "Chinese",
+        "description": "Offers a fine dining experience with a focus on Chinese cuisine!"
+    },
+    {
+        "id": 36,
+        "name": "FulFil",
+        "img": "burger.jpeg",
+        "rating": "4.1",
+        "location": "Location 6",
+        "cuisine": "Barbecue",
+        "description": "Offers a diverse barbecue menu in a casual dining setting, known for its flavorful grills!"
+    },
+    {
+        "id": 37,
+        "name": "Alfresco",
+        "img": "alfresco.jpg",
+        "rating": "4.2",
+        "location": "Location 7",
+        "cuisine": "Cafe",
+        "description": "Offers a range of Mexican fast food, including tacos and burritos, suitable for a quick and satisfying meal!"
+    },
+    {
+        "id": 38,
+        "name": "Mahesh Lunch Home",
+        "img": "mahesh.jpg",
+        "rating": "4.3",
+        "location": "Location 8",
+        "cuisine": "Seafood",
+        "description": "Specializes in Mangalorean seafood dishes, serving a wide range of coastal specialties in a family-friendly environment!"
+    },
+    {
+        "id": 39,
+        "name": "Sassy Teaspoon",
+        "img": "sassy.jpg",
+        "rating": "4.4",
+        "location": "Location 9",
+        "cuisine": "Desserts",
+        "description": "Offers a wide variety of artisanal desserts, from classic favorites like red velvet and chocolate cakes to unique creations like salted caramel and Nutella pastries!"
+    },
+    {
+        "id": 40,
+        "name": "Alto Vino",
+        "img": "vino.jpg",
+        "rating": "4.0",
+        "location": "Location 0",
+        "cuisine": "Italian",
+        "description": "Offers a fine dining experience with a menu featuring classic Italian dishes crafted with authentic ingredients!"
+    },
+    {
+        "id": 41,
+        "name": "Shizusan",
+        "img": "shizusan.jpg",
+        "rating": "4.1",
+        "location": "Location 1",
+        "cuisine": "Japanese",
+        "description": "Menu that introduces refreshing fusions to authentic Japanese flavors featuring items like dynamic shrimp and rainbow maki!"
+    },
+    {
+        "id": 42,
+        "name": "Zeera",
+        "img": "zeera.jpg",
+        "rating": "4.2",
+        "location": "Location 2",
+        "cuisine": "Indian",
+        "description": "Specializes in North Indian cuisine, offering a luxurious dining experience with a curated menu!"
+    },
+    {
+        "id": 43,
+        "name": "Wadeshwar",
+        "img": "wadeshwar.jpg",
+        "rating": "4.3",
+        "location": "Location 3",
+        "cuisine": "Fast Food",
+        "description": "Offers a range of quick South Indian dishes in a contemporary setting, perfect for a fast meal!"
+    },
+    {
+        "id": 44,
+        "name": "Taco Bell",
+        "img": "burger.jpeg",
+        "rating": "4.4",
+        "location": "Location 4",
+        "cuisine": "Mexican",
+        "description": "A globally recognized chain offering quick-service Mexican-inspired dishes like tacos, burritos, and quesadillas!"
+    },
+    {
+        "id": 45,
+        "name": "Chinese Room",
+        "img": "room.jpg",
+        "rating": "4.0",
+        "location": "Location 5",
+        "cuisine": "Chinese",
+        "description": "Known for its traditional Chinese dishes and has been a longstanding favorite among locals!"
+    },
+    {
+        "id": 46,
+        "name": "Barbeque Deck",
+        "img": "burger.jpeg",
+        "rating": "4.1",
+        "location": "Location 6",
+        "cuisine": "Barbecue",
+        "description": "Offers North Indian and barbecue cuisines, providing a rooftop dining experience with live grills!"
+    },
+    {
+        "id": 47,
+        "name": "Vohuman Cafe",
+        "img": "vohuman.jpg",
+        "rating": "4.2",
+        "location": "Location 7",
+        "cuisine": "Cafe",
+        "description": "Renowned for its classic Irani chai, cheese omelette, and bun maska, offering a nostalgic ambiance that has attracted patrons for decades!"
+    },
+    {
+        "id": 48,
+        "name": "The Sea Secret",
+        "img": "burger.jpeg",
+        "rating": "4.3",
+        "location": "Location 8",
+        "cuisine": "Seafood",
+        "description": "Offering a diverse seafood menu, The Sea Secret is praised for its flavorful dishes and inviting atmosphere!"
+    },
+    {
+        "id": 49,
+        "name": "German Bakery",
+        "img": "german.jpg",
+        "rating": "4.4",
+        "location": "Location 9",
+        "cuisine": "Desserts",
+        "description": "Serving a mix of Continental and Indian dishes, along with an array of baked goods, in a vibrant and eclectic setting!"
+    },
+    {
+        "id": 50,
+        "name": "Dario's Trattoria",
+        "img": "burger.jpeg",
+        "rating": "4.0",
+        "location": "Location 0",
+        "cuisine": "Italian",
+        "description": "Situated in Koregaon Park, Dario's Trattoria offers a range of Italian dishes, including pizzas and pastas, in a warm and inviting atmosphere!"
+    }
+]

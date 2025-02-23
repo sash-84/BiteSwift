@@ -12,13 +12,13 @@ const LoginModal = ({ closeLogin, openSignup }) => {
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
       <div className="bg-white p-6 rounded-lg shadow-lg w-96 relative">
-        <h2 className="text-2xl font-semibold mb-4">Login</h2>
+        <h2 className="text-2xl font-bold text-[#2A2A2A] mb-4">Login</h2>
 
         <input
           ref={inputRef}
           type="text"
           placeholder="Phone or Email"
-          className="w-full p-2 border rounded mb-3 focus:outline-green-500"
+          className="w-full p-2 border rounded mb-3 focus:outline-red-500"
         />
         <button className="w-full bg-red-500 text-white py-2 rounded">
           Send OTP

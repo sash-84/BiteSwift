@@ -6,14 +6,16 @@ const Services = () => {
       
       {/* Heading & Description */}
       <div className="max-w-5xl mx-auto text-center mb-12">
-        <h2 className="text-4xl font-extrabold text-gray-800">Our Services</h2>
+        <h2 className="text-4xl font-bold text-[#2A2A2A]">Our Services</h2>
         <p className="text-gray-600 max-w-lg mx-auto mt-3">
           Experience top-notch services tailored for your convenience.
         </p>
       </div>
 
+      
+
       {/* Service Grid */}
-      <div className="max-w-6xl mx-auto grid grid-cols-2 gap-8 px-6">
+      <div className="max-w-6xl mx-auto grid grid-cols-2 gap-8 px-10">
         
         {/* Left Column - Two Smaller Cards */}
         <div className="flex flex-col gap-8">
