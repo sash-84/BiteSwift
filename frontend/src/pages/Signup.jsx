@@ -1,17 +1,44 @@
-import { useRef, useEffect, useState } from "react";
+import { useRef, useEffect, useState, useContext } from "react";
+import axios from 'axios';
 import { FcGoogle } from "react-icons/fc";
+import {UserContext} from "../UserContext";
 
 const SignupModal = ({ closeSignup, openLogin }) => {
+
+  const [error, setError] = useState("");
+
+  const {setUser} = useContext(UserContext);
   const inputRef = useRef(null);
 
   useEffect(() => {
     inputRef.current?.focus();
   }, []);
 
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    password: "",
+  });
+
   const [isChecked, setIsChecked] = useState(false);
-  const handleCheckboxChange = () => {
-    setIsChecked(!isChecked);
+
+  const handleInputChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
+
+  const handleSubmit = async () => {
+    if(!isChecked) return;
+
+    const {name, email, password} = formData;
+    try {
+      const res = await axios.post("http://localhost:5000/api/users/register", { name, email, password });
+      localStorage.setItem("token", res.data.token); // Store token
+      setUser(res.data); // Set user state in parent component
+      closeSignup(); // Close modal
+    } catch (error) {
+      setError(error.response?.data?.error || "Signup failed");
+    }
+  }
 
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
@@ -27,6 +54,9 @@ const SignupModal = ({ closeSignup, openLogin }) => {
         <input
           ref={inputRef}
           type="text"
+          name="name"
+          value={formData.name}
+          onChange={handleInputChange}
           placeholder="Full Name"
           className="w-full p-2 border rounded mb-3 focus:outline-red-500"
           required
@@ -35,10 +65,38 @@ const SignupModal = ({ closeSignup, openLogin }) => {
         {/* Email Input */}
         <input
           type="email"
+          name="email"
+          value={formData.email}
+          onChange={handleInputChange}
           placeholder="Email"
           className="w-full p-2 border rounded mb-3 focus:outline-red-500"
           required
         />
+
+        <input
+          type="password"
+          name="password"
+          value={formData.password}
+          onChange={handleInputChange}
+          placeholder="Password"
+          className="w-full p-2 border rounded mb-3 focus:outline-red-500"
+          required
+        />
+
+        {/* Role Selection */}
+        {/* <select
+          name="role"
+          value={formData.role}
+          onChange={handleInputChange}
+          className="w-full p-2 border rounded mb-3 focus:outline-red-500"
+          required
+        >
+          <option value="" disabled>Select your role</option>
+          <option value="mentor">Customer</option>
+          <option value="researcher">Restaurant</option>
+          <option value="innovator">Delivery</option>
+          <option value="stakeholder">Admin</option>
+        </select> */}
 
         {/* Terms Checkbox */}
         <div className="flex items-center mb-3">
@@ -46,7 +104,7 @@ const SignupModal = ({ closeSignup, openLogin }) => {
             type="checkbox" 
             id="terms"
             checked={isChecked}
-            onChange={handleCheckboxChange} 
+            onChange={() => setIsChecked(!isChecked)} 
             className="mr-2 accent-red-500 border-red-500" />
           <label htmlFor="terms" className="text-sm">
             I agree to BiteSwift's
@@ -57,7 +115,10 @@ const SignupModal = ({ closeSignup, openLogin }) => {
         </div>
 
         {/* Create Account Button */}
-        <button className={`w-full py-2 text-white rounded ${isChecked ? 'bg-red-500' : 'bg-gray-300 cursor-not-allowed' }`}>
+        <button 
+          disabled={!isChecked}
+          onClick={handleSubmit}
+          className={`w-full py-2 text-white rounded ${isChecked ? 'bg-red-500' : 'bg-gray-300' }`}>
           Create Account
         </button>
 
@@ -76,6 +137,16 @@ const SignupModal = ({ closeSignup, openLogin }) => {
 
         <hr className="w-full border-b-zinc-400 mt-7" />
 
+        {error ? (
+          <>
+          <p className="text-sm mt-4 text-red-500 text-center font-semibold">{error}</p>
+          setError("");
+          {openLogin()}
+          </>
+        )
+        :
+        (
+          <>
         {/* Login Link */}
         <p className="text-sm mt-4">
           Already have an account?
@@ -89,6 +160,8 @@ const SignupModal = ({ closeSignup, openLogin }) => {
         >
           ×
         </button>
+        </>)}
+
       </div>
     </div>
   );

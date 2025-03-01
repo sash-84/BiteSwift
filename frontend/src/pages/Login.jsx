@@ -1,14 +1,33 @@
-import { useRef, useEffect } from 'react';
-import { MdEmail } from "react-icons/md";
+import { useRef, useEffect, useState, useContext } from 'react';
+import axios from 'axios';
 import { FcGoogle } from "react-icons/fc";
+import {UserContext} from "../UserContext";
 
-const LoginModal = ({ closeLogin, openSignup }) => {
+const LoginModal = ({ closeLogin, openSignup}) => {
 
-  const inputRef = useRef(null); 
+  const {setUser} = useContext(UserContext);  //to set username in navbar
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
+  const handleLogin = async () => {
+    try {
+      const res = await axios.post("http://localhost:5000/api/users/login", { email, password });
+      console.log("Response Data:", res.data); // Debugging
+
+      localStorage.setItem("token", res.data.token); // Store token
+      localStorage.setItem("user", res.data.name); // Store username
+      setUser(res.data); // Set user state in parent component
+      closeLogin(); // Close modal
+    } catch (error) {
+      alert(error.response?.data?.error || "Something went wrong!");    
+    }
+  };
+
+  const inputRef = useRef(null);  // to focus on email when login page opens
   useEffect(() => {
     inputRef.current?.focus(); 
   }, []);
+
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
       <div className="bg-white p-6 rounded-lg shadow-lg w-96 relative">
@@ -16,12 +35,23 @@ const LoginModal = ({ closeLogin, openSignup }) => {
 
         <input
           ref={inputRef}
-          type="text"
-          placeholder="Phone or Email"
+          type="email"
+          placeholder="Email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
           className="w-full p-2 border rounded mb-3 focus:outline-red-500"
         />
-        <button className="w-full bg-red-500 text-white py-2 rounded">
-          Send OTP
+        <input
+          type="password"
+          placeholder="Password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+          className="w-full p-2 border rounded mb-3 focus:outline-red-500"
+        />
+        <button 
+          onClick={handleLogin}
+          className="w-full bg-red-500 text-white py-2 rounded">
+          Login
         </button>
 
         <div className="flex justify-between items-center my-4">
@@ -33,11 +63,6 @@ const LoginModal = ({ closeLogin, openSignup }) => {
         <button className="w-full py-2 rounded flex items-center justify-center mb-3 border">
           <FcGoogle className="text-red-500 text-xl mr-2"/>
           Sign in with Google
-        </button>
-
-        <button className="w-full py-2 rounded flex items-center justify-center border">
-          <MdEmail className="text-red-500 text-xl mr-2" />
-          Continue with Email
         </button>
 
         <hr className="w-full border-b-zinc-400 mt-7" />
