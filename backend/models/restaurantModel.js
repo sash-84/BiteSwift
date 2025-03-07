@@ -9,7 +9,7 @@ const RestaurantSchema = new mongoose.Schema({
         type: String, 
         required: true, 
         unique: true,
-        match: [/^\S+@\S+\.\S+$/, "Invalid email format"] // ✅ Email regex validation 
+        match: [/^\S+@\S+\.\S+$/, "Invalid email format"]
     },
     password: {
         type: String,
@@ -22,8 +22,14 @@ const RestaurantSchema = new mongoose.Schema({
     phone: { 
         type: String, 
         required: true,
-        match: [/^\d{10}$/, "Phone number must be 10 digits"] // ✅ Restricts to 10 digits 
+        match: [/^\d{10}$/, "Phone number must be 10 digits"]
     },
+    menu: [{
+        name:String,
+        price: Number,
+        image: String,
+        description: String,
+    }],
     isVerified: { 
         type: Boolean, 
         default: false 
