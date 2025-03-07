@@ -4,7 +4,7 @@ const jwt = require("jsonwebtoken");
 
 const registerRestaurant = async (req, res) => {
   try {
-    const { name, email, password, address, phone } = req.body;
+    const { name, email, password, address, phone, menu, isVerified } = req.body;
 
     const restaurantExists = await Restaurant.findOne({ email });
     if (restaurantExists) {
@@ -20,6 +20,8 @@ const registerRestaurant = async (req, res) => {
       password: hashedPassword,
       address,
       phone,
+      menu,
+      isVerified
     });
 
     if (restaurant) {
@@ -29,6 +31,7 @@ const registerRestaurant = async (req, res) => {
         email: restaurant.email,
         address: restaurant.address,
         phone: restaurant.phone,
+        menu: restaurant.menu,
         isVerified: restaurant.isVerified,
         token: generateToken(restaurant._id),
       });
